@@ -1,0 +1,101 @@
+info:
+  groupId: @project.groupId@
+  artifactId: @project.artifactId@
+  version: @project.version@
+
+spring:
+  #该配置文件中的配置，对应的服务名称是 xl-gateway
+  application:
+    name: yzj-gateway
+  profiles:
+    active: dev
+  jackson:
+    serialization.indent_output: true
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 开启注册发现服务动态路由
+          lowerCaseServiceId: true #启用服务实例id名称小写支持
+      routes:
+#        - id: xl-das
+#          uri: lb://xl-das
+#          predicates:
+#            - Path=/testA/
+      - id: path_route
+        uri: lb://xl-das
+        predicates:
+          - Path=/xl-das/**
+        filters:
+#        - StripPrefix=1
+        - name: Retry
+          args:
+            retries: 3 #重试次数，不包含本次，默认是3
+            status: 404 #重试response code，默认无
+            statusSeries: 500 #重试response code 系列，100（info），200（success），300（redirect），400（client）
+        - name:  Hystrix
+          args:
+            name: fallbackcmd
+            fallbackUri: forward:/fallback
+
+
+#hystrix:
+#    command:
+#        default:
+#            execution:
+#                isolation:
+#                    thread:
+#                        timeoutInMilliseconds: 10000
+
+
+
+
+
+
+#负载均衡
+ribbon:
+   eureka:
+     enabled: true
+
+
+
+#端口
+server:
+  port: 8000
+
+#监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+#Eureka相关配置
+eureka:
+    client:
+        instance-info-replication-interval-seconds: 10 #复制实例变化信息到eureka服务器所需要的时间间隔（s），默认为30秒
+        registry-fetch-interval-seconds: 10 #从Eureka服务器端获取注册信息的间隔时间，单位：秒
+    instance:
+        prefer-ip-address: true
+        instanceId: xl-gateway:${spring.application.instance-id:${random.value}}:${server.port}
+        lease-renewal-interval-in-seconds: 5 # eureka客户需要多长时间发送心跳给eureka服务器，表明它仍然活着,默认为30 秒
+        lease-expiration-duration-in-seconds: 10 #Eureka服务器在接收到实例的最后一次发出的心跳后，需要等待多久才可以将此实例删除，默认为90秒
+#        status-page-url-path: ${spring.management.context-path}/info
+#        health-check-url-path: ${spring.management.context-path}/health
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+2019-03-20 08:50:35 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 08:50:39 [INFO][GatewayApplication][main][Started GatewayApplication in 5.077 seconds (JVM running for 5.752)]-> Started GatewayApplication in 5.077 seconds (JVM running for 5.752)
+2019-03-20 09:00:23 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:01:45 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:03:18 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:03:21 [INFO][GatewayApplication][main][Started GatewayApplication in 4.705 seconds (JVM running for 5.342)]-> Started GatewayApplication in 4.705 seconds (JVM running for 5.342)
+2019-03-20 09:04:59 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:05:19 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:11:55 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:11:58 [INFO][GatewayApplication][main][Started GatewayApplication in 4.265 seconds (JVM running for 4.893)]-> Started GatewayApplication in 4.265 seconds (JVM running for 4.893)
+2019-03-20 09:44:22 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:44:26 [INFO][GatewayApplication][main][Started GatewayApplication in 4.6 seconds (JVM running for 5.199)]-> Started GatewayApplication in 4.6 seconds (JVM running for 5.199)
+2019-03-20 09:49:18 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 09:49:22 [INFO][GatewayApplication][main][Started GatewayApplication in 4.618 seconds (JVM running for 5.223)]-> Started GatewayApplication in 4.618 seconds (JVM running for 5.223)
+2019-03-20 10:12:50 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:12:54 [INFO][GatewayApplication][main][Started GatewayApplication in 4.976 seconds (JVM running for 5.576)]-> Started GatewayApplication in 4.976 seconds (JVM running for 5.576)
+2019-03-20 10:15:46 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:15:49 [INFO][GatewayApplication][main][Started GatewayApplication in 4.111 seconds (JVM running for 4.734)]-> Started GatewayApplication in 4.111 seconds (JVM running for 4.734)
+2019-03-20 10:18:16 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:18:19 [INFO][GatewayApplication][main][Started GatewayApplication in 3.922 seconds (JVM running for 4.529)]-> Started GatewayApplication in 3.922 seconds (JVM running for 4.529)
+2019-03-20 10:19:17 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:19:21 [INFO][GatewayApplication][main][Started GatewayApplication in 5.075 seconds (JVM running for 5.697)]-> Started GatewayApplication in 5.075 seconds (JVM running for 5.697)
+2019-03-20 10:19:38 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:19:41 [INFO][GatewayApplication][main][Started GatewayApplication in 4.561 seconds (JVM running for 5.142)]-> Started GatewayApplication in 4.561 seconds (JVM running for 5.142)
+2019-03-20 10:20:19 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:20:23 [INFO][GatewayApplication][main][Started GatewayApplication in 4.489 seconds (JVM running for 5.086)]-> Started GatewayApplication in 4.489 seconds (JVM running for 5.086)
+2019-03-20 10:26:16 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:26:19 [INFO][GatewayApplication][main][Started GatewayApplication in 4.087 seconds (JVM running for 4.703)]-> Started GatewayApplication in 4.087 seconds (JVM running for 4.703)
+2019-03-20 10:26:38 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:26:41 [INFO][GatewayApplication][main][Started GatewayApplication in 4.155 seconds (JVM running for 4.733)]-> Started GatewayApplication in 4.155 seconds (JVM running for 4.733)
+2019-03-20 10:29:21 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:29:24 [INFO][GatewayApplication][main][Started GatewayApplication in 4.222 seconds (JVM running for 4.813)]-> Started GatewayApplication in 4.222 seconds (JVM running for 4.813)
+2019-03-20 10:29:30 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:29:33 [INFO][GatewayApplication][main][Started GatewayApplication in 4.587 seconds (JVM running for 5.2)]-> Started GatewayApplication in 4.587 seconds (JVM running for 5.2)
+2019-03-20 10:35:04 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:35:08 [INFO][GatewayApplication][main][Started GatewayApplication in 5.203 seconds (JVM running for 5.834)]-> Started GatewayApplication in 5.203 seconds (JVM running for 5.834)
+2019-03-20 10:36:00 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:36:03 [INFO][GatewayApplication][main][Started GatewayApplication in 4.572 seconds (JVM running for 5.193)]-> Started GatewayApplication in 4.572 seconds (JVM running for 5.193)
+2019-03-20 10:37:58 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:38:02 [INFO][GatewayApplication][main][Started GatewayApplication in 4.814 seconds (JVM running for 5.432)]-> Started GatewayApplication in 4.814 seconds (JVM running for 5.432)
+2019-03-20 10:38:21 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:38:24 [INFO][GatewayApplication][main][Started GatewayApplication in 4.41 seconds (JVM running for 5.051)]-> Started GatewayApplication in 4.41 seconds (JVM running for 5.051)
+2019-03-20 10:43:51 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:44:02 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:44:05 [INFO][GatewayApplication][main][Started GatewayApplication in 4.078 seconds (JVM running for 4.671)]-> Started GatewayApplication in 4.078 seconds (JVM running for 4.671)
+2019-03-20 10:44:52 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:44:55 [INFO][GatewayApplication][main][Started GatewayApplication in 3.975 seconds (JVM running for 4.55)]-> Started GatewayApplication in 3.975 seconds (JVM running for 4.55)
+2019-03-20 10:48:44 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:48:47 [INFO][GatewayApplication][main][Started GatewayApplication in 4.065 seconds (JVM running for 4.664)]-> Started GatewayApplication in 4.065 seconds (JVM running for 4.664)
+2019-03-20 10:54:13 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:54:17 [INFO][GatewayApplication][main][Started GatewayApplication in 4.33 seconds (JVM running for 4.935)]-> Started GatewayApplication in 4.33 seconds (JVM running for 4.935)
+2019-03-20 10:55:10 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:55:13 [INFO][GatewayApplication][main][Started GatewayApplication in 4.418 seconds (JVM running for 5.059)]-> Started GatewayApplication in 4.418 seconds (JVM running for 5.059)
+2019-03-20 10:55:43 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:55:46 [INFO][GatewayApplication][main][Started GatewayApplication in 4.306 seconds (JVM running for 4.933)]-> Started GatewayApplication in 4.306 seconds (JVM running for 4.933)
+2019-03-20 10:56:10 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:56:13 [INFO][GatewayApplication][main][Started GatewayApplication in 4.337 seconds (JVM running for 4.951)]-> Started GatewayApplication in 4.337 seconds (JVM running for 4.951)
+2019-03-20 10:56:19 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:56:22 [INFO][GatewayApplication][main][Started GatewayApplication in 4.515 seconds (JVM running for 5.124)]-> Started GatewayApplication in 4.515 seconds (JVM running for 5.124)
+2019-03-20 10:57:05 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 10:57:08 [INFO][GatewayApplication][main][Started GatewayApplication in 4.333 seconds (JVM running for 4.947)]-> Started GatewayApplication in 4.333 seconds (JVM running for 4.947)
+2019-03-20 10:59:58 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:00:02 [INFO][GatewayApplication][main][Started GatewayApplication in 4.58 seconds (JVM running for 5.195)]-> Started GatewayApplication in 4.58 seconds (JVM running for 5.195)
+2019-03-20 11:02:14 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:02:18 [INFO][GatewayApplication][main][Started GatewayApplication in 4.424 seconds (JVM running for 5.037)]-> Started GatewayApplication in 4.424 seconds (JVM running for 5.037)
+2019-03-20 11:02:53 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:02:56 [INFO][GatewayApplication][main][Started GatewayApplication in 4.462 seconds (JVM running for 5.083)]-> Started GatewayApplication in 4.462 seconds (JVM running for 5.083)
+2019-03-20 11:03:16 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:03:19 [INFO][GatewayApplication][main][Started GatewayApplication in 4.438 seconds (JVM running for 5.062)]-> Started GatewayApplication in 4.438 seconds (JVM running for 5.062)
+2019-03-20 11:05:17 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:05:21 [INFO][GatewayApplication][main][Started GatewayApplication in 4.341 seconds (JVM running for 4.959)]-> Started GatewayApplication in 4.341 seconds (JVM running for 4.959)
+2019-03-20 11:05:40 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:05:44 [INFO][GatewayApplication][main][Started GatewayApplication in 4.159 seconds (JVM running for 4.78)]-> Started GatewayApplication in 4.159 seconds (JVM running for 4.78)
+2019-03-20 11:06:36 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:06:39 [INFO][GatewayApplication][main][Started GatewayApplication in 4.556 seconds (JVM running for 5.169)]-> Started GatewayApplication in 4.556 seconds (JVM running for 5.169)
+2019-03-20 11:08:13 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:08:16 [INFO][GatewayApplication][main][Started GatewayApplication in 4.177 seconds (JVM running for 4.768)]-> Started GatewayApplication in 4.177 seconds (JVM running for 4.768)
+2019-03-20 11:16:37 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:16:40 [INFO][GatewayApplication][main][Started GatewayApplication in 4.303 seconds (JVM running for 4.938)]-> Started GatewayApplication in 4.303 seconds (JVM running for 4.938)
+2019-03-20 11:18:55 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:18:58 [INFO][GatewayApplication][main][Started GatewayApplication in 4.207 seconds (JVM running for 4.817)]-> Started GatewayApplication in 4.207 seconds (JVM running for 4.817)
+2019-03-20 11:20:20 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:20:24 [INFO][GatewayApplication][main][Started GatewayApplication in 4.261 seconds (JVM running for 4.891)]-> Started GatewayApplication in 4.261 seconds (JVM running for 4.891)
+2019-03-20 11:31:17 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:31:20 [INFO][GatewayApplication][main][Started GatewayApplication in 4.396 seconds (JVM running for 5.013)]-> Started GatewayApplication in 4.396 seconds (JVM running for 5.013)
+2019-03-20 11:36:35 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 11:36:39 [INFO][GatewayApplication][main][Started GatewayApplication in 4.68 seconds (JVM running for 5.304)]-> Started GatewayApplication in 4.68 seconds (JVM running for 5.304)
+2019-03-20 13:32:01 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:32:04 [INFO][GatewayApplication][main][Started GatewayApplication in 4.283 seconds (JVM running for 4.897)]-> Started GatewayApplication in 4.283 seconds (JVM running for 4.897)
+2019-03-20 13:34:03 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:34:06 [INFO][GatewayApplication][main][Started GatewayApplication in 4.468 seconds (JVM running for 5.11)]-> Started GatewayApplication in 4.468 seconds (JVM running for 5.11)
+2019-03-20 13:49:27 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:49:31 [INFO][GatewayApplication][main][Started GatewayApplication in 4.534 seconds (JVM running for 5.142)]-> Started GatewayApplication in 4.534 seconds (JVM running for 5.142)
+2019-03-20 13:50:56 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:50:59 [INFO][GatewayApplication][main][Started GatewayApplication in 4.375 seconds (JVM running for 5.004)]-> Started GatewayApplication in 4.375 seconds (JVM running for 5.004)
+2019-03-20 13:52:25 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:52:29 [INFO][GatewayApplication][main][Started GatewayApplication in 4.329 seconds (JVM running for 4.944)]-> Started GatewayApplication in 4.329 seconds (JVM running for 4.944)
+2019-03-20 13:57:46 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:57:49 [INFO][GatewayApplication][main][Started GatewayApplication in 4.476 seconds (JVM running for 5.088)]-> Started GatewayApplication in 4.476 seconds (JVM running for 5.088)
+2019-03-20 13:58:17 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:58:20 [INFO][GatewayApplication][main][Started GatewayApplication in 4.496 seconds (JVM running for 5.109)]-> Started GatewayApplication in 4.496 seconds (JVM running for 5.109)
+2019-03-20 13:59:52 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 13:59:55 [INFO][GatewayApplication][main][Started GatewayApplication in 4.442 seconds (JVM running for 5.045)]-> Started GatewayApplication in 4.442 seconds (JVM running for 5.045)
+2019-03-20 14:00:19 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:00:23 [INFO][GatewayApplication][main][Started GatewayApplication in 5.146 seconds (JVM running for 5.771)]-> Started GatewayApplication in 5.146 seconds (JVM running for 5.771)
+2019-03-20 14:00:49 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:00:52 [INFO][GatewayApplication][main][Started GatewayApplication in 4.554 seconds (JVM running for 5.166)]-> Started GatewayApplication in 4.554 seconds (JVM running for 5.166)
+2019-03-20 14:28:56 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:29:00 [INFO][GatewayApplication][main][Started GatewayApplication in 4.284 seconds (JVM running for 4.874)]-> Started GatewayApplication in 4.284 seconds (JVM running for 4.874)
+2019-03-20 14:30:12 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:30:15 [INFO][GatewayApplication][main][Started GatewayApplication in 4.233 seconds (JVM running for 4.861)]-> Started GatewayApplication in 4.233 seconds (JVM running for 4.861)
+2019-03-20 14:31:19 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:31:23 [INFO][GatewayApplication][main][Started GatewayApplication in 4.356 seconds (JVM running for 4.976)]-> Started GatewayApplication in 4.356 seconds (JVM running for 4.976)
+2019-03-20 14:33:06 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:33:09 [INFO][GatewayApplication][main][Started GatewayApplication in 4.118 seconds (JVM running for 4.731)]-> Started GatewayApplication in 4.118 seconds (JVM running for 4.731)
+2019-03-20 14:34:05 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:34:08 [INFO][GatewayApplication][main][Started GatewayApplication in 4.152 seconds (JVM running for 4.758)]-> Started GatewayApplication in 4.152 seconds (JVM running for 4.758)
+2019-03-20 14:34:41 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:34:44 [INFO][GatewayApplication][main][Started GatewayApplication in 4.233 seconds (JVM running for 4.839)]-> Started GatewayApplication in 4.233 seconds (JVM running for 4.839)
+2019-03-20 14:47:15 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:47:18 [INFO][GatewayApplication][main][Started GatewayApplication in 4.07 seconds (JVM running for 4.667)]-> Started GatewayApplication in 4.07 seconds (JVM running for 4.667)
+2019-03-20 14:55:21 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 14:55:24 [INFO][GatewayApplication][main][Started GatewayApplication in 4.029 seconds (JVM running for 4.659)]-> Started GatewayApplication in 4.029 seconds (JVM running for 4.659)
+2019-03-20 15:00:34 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 15:00:38 [INFO][GatewayApplication][main][Started GatewayApplication in 4.219 seconds (JVM running for 4.855)]-> Started GatewayApplication in 4.219 seconds (JVM running for 4.855)
+2019-03-20 16:09:20 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 16:09:23 [INFO][GatewayApplication][main][Started GatewayApplication in 4.359 seconds (JVM running for 4.976)]-> Started GatewayApplication in 4.359 seconds (JVM running for 4.976)
+2019-03-20 16:18:23 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 16:18:26 [INFO][GatewayApplication][main][Started GatewayApplication in 4.006 seconds (JVM running for 4.63)]-> Started GatewayApplication in 4.006 seconds (JVM running for 4.63)
+2019-03-20 16:55:01 [INFO][GatewayApplication][main][The following profiles are active: dev]-> The following profiles are active: dev
+2019-03-20 16:55:04 [INFO][GatewayApplication][main][Started GatewayApplication in 4.321 seconds (JVM running for 4.955)]-> Started GatewayApplication in 4.321 seconds (JVM running for 4.955)

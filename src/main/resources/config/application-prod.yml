@@ -1,0 +1,15 @@
+
+spring:
+  security:
+    user:
+      name: prod
+      password: prod
+
+
+eureka:
+    client:
+        enabled: true
+        fetch-registry: true
+        register-with-eureka: true
+        serviceUrl:
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/
