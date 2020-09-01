@@ -1,4 +1,4 @@
-package com.yzj.gateway.gateway.filter;
+package com.yzj.gateway.filter;
 
 
 import com.alibaba.fastjson.JSON;
@@ -44,8 +44,8 @@ public class AccessGatewayFilter implements GatewayFilter, Ordered {
     /**
      * 直接通过的url
      */
-    private final List<String> passUrls = Lists.newArrayList("/xl-das/api/v1/hot-word/0","/xl-das/api/v1/hot-word/1"
-            ,"/xl-das/api/v1/pay/wx/pay-back","/xl-das/api/v1/pay/ali/pay-back");
+    private final List<String> passUrls = Lists.newArrayList("/xl-das/api/v1/hot-word/0", "/xl-das/api/v1/hot-word/1"
+            , "/xl-das/api/v1/pay/wx/pay-back", "/xl-das/api/v1/pay/ali/pay-back");
 
 
     /**
@@ -68,62 +68,62 @@ public class AccessGatewayFilter implements GatewayFilter, Ordered {
         String method = request.getMethodValue();
         String url = request.getPath().value();
         log.info("url:{},method:{},headers:{}", url, method, request.getHeaders());
-        if(passUrls.contains(url)){
+        if (passUrls.contains(url)) {
             ServerHttpRequest newRequest = requestBuild
-                    .header("token","ROLE_ANONYMOUS")
-                    .header("XL-Request-url",url)
+                    .header("token", "ROLE_ANONYMOUS")
+                    .header("XL-Request-url", url)
                     .header("XL-start-time", String.valueOf(System.currentTimeMillis()))
                     .build();
             return chain.filter(exchange.mutate().request(newRequest).build());
         }
         String ip = authService.getRealIp(request);
         ErrorState state = MALICIOUS;
-        if(StringUtils.isNotBlank(authentication)
-                &&authentication.startsWith(BEARER)){
+        if (StringUtils.isNotBlank(authentication)
+                && authentication.startsWith(BEARER)) {
             state = ErrorState.getEnum(authService.isTokenValid(authentication));
-            if(Objects.isNull(state)) {
+            if (Objects.isNull(state)) {
                 if (authService.authenticateAuth(authentication, url, method, ip)) {
-                    TokenMsgDto tokenMsgDto = authService.getJwt(authentication,identity);
-                    log.info("用户名:{},clientId:{},页面身份:{}", tokenMsgDto.getUsername(),tokenMsgDto.getClientId(),tokenMsgDto.getPageIdentity());
+                    TokenMsgDto tokenMsgDto = authService.getJwt(authentication, identity);
+                    log.info("用户名:{},clientId:{},页面身份:{}", tokenMsgDto.getUsername(), tokenMsgDto.getClientId(), tokenMsgDto.getPageIdentity());
                     log.info("token:{}", tokenMsgDto.getToken());
-                    if(StringUtils.isNotBlank(tokenMsgDto.getErrorMsg())){
+                    if (StringUtils.isNotBlank(tokenMsgDto.getErrorMsg())) {
                         log.info("出现错误,错误原因为:{}", tokenMsgDto.getErrorMsg());
                     }
-                    if("banUser".equals(tokenMsgDto.getToken())){
+                    if ("banUser".equals(tokenMsgDto.getToken())) {
                         return banUser(exchange);
                     }
-                    if("refresh".equals(tokenMsgDto.getToken())){
+                    if ("refresh".equals(tokenMsgDto.getToken())) {
                         return refresh(exchange);
                     }
                     ServerHttpRequest newRequest = requestBuild
-                            .header("token",tokenMsgDto.getToken())
-                            .header("XL-Request-url",url)
+                            .header("token", tokenMsgDto.getToken())
+                            .header("XL-Request-url", url)
                             .header("XL-start-time", String.valueOf(System.currentTimeMillis()))
                             .build();
-                    if(StringUtils.isNotBlank(tokenMsgDto.getPageIdentity())
-                            &&StringUtils.isNotBlank(tokenMsgDto.getSystemIdentity())
-                            &&!tokenMsgDto.getPageIdentity().equals(tokenMsgDto.getSystemIdentity())){
-                        log.info("页面身份:{},系统身份:{}",tokenMsgDto.getPageIdentity(),tokenMsgDto.getSystemIdentity());
-                        exchange.getResponse().getHeaders().add("chang-identity-name","true");
+                    if (StringUtils.isNotBlank(tokenMsgDto.getPageIdentity())
+                            && StringUtils.isNotBlank(tokenMsgDto.getSystemIdentity())
+                            && !tokenMsgDto.getPageIdentity().equals(tokenMsgDto.getSystemIdentity())) {
+                        log.info("页面身份:{},系统身份:{}", tokenMsgDto.getPageIdentity(), tokenMsgDto.getSystemIdentity());
+                        exchange.getResponse().getHeaders().add("chang-identity-name", "true");
                     }
                     return chain.filter(exchange.mutate().request(newRequest).build());
                 } else {
                     state = DENIED;
                 }
             }
-        }else if(StringUtils.isBlank(authentication)||authentication.startsWith("Basic")){
-            if(authService.authenticateOrg(authentication,url, method,ip)) {
+        } else if (StringUtils.isBlank(authentication) || authentication.startsWith("Basic")) {
+            if (authService.authenticateOrg(authentication, url, method, ip)) {
                 ServerHttpRequest newRequest = requestBuild
-                        .header("token","ROLE_ANONYMOUS")
-                        .header("XL-Request-url",url)
+                        .header("token", "ROLE_ANONYMOUS")
+                        .header("XL-Request-url", url)
                         .header("XL-start-time", String.valueOf(System.currentTimeMillis()))
                         .build();
                 return chain.filter(exchange.mutate().request(newRequest).build());
-            }else {
+            } else {
                 state = NOTLOGGEDIN;
             }
         }
-        return unauthorized(exchange,state);
+        return unauthorized(exchange, state);
     }
 
     /**
@@ -133,7 +133,7 @@ public class AccessGatewayFilter implements GatewayFilter, Ordered {
      */
     private Mono<Void> unauthorized(ServerWebExchange serverWebExchange, ErrorState state) {
         ResultCode resultCode = MALICIOUS_VISIT;
-        switch(state){
+        switch (state) {
             case DENIED:
                 serverWebExchange.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
                 resultCode = UNAUTHORIZED;

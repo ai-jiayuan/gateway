@@ -1,23 +1,22 @@
-
-
 spring:
-  security:
-    user:
-      name: dev
-      password: dev
-
-
+  redis:
+    host: 192.168.1.5
+    port: 6379
+    password: xluniccc
+    database: 2
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 20
+        min-idle: 8
 eureka:
-    client:
-        enabled: true
-        fetch-registry: true
-        register-with-eureka: true
-        serviceUrl:
-            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/
-
-
-
-
+  client:
+    enabled: true
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://dev:dev@192.168.1.5:8761/eureka/
 
 
 

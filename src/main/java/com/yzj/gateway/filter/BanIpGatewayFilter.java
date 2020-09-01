@@ -1,4 +1,4 @@
-package com.yzj.gateway.gateway.filter;
+package com.yzj.gateway.filter;
 
 import com.alibaba.fastjson.JSON;
 import com.uniccc.client.service.IAuthService;
@@ -36,9 +36,9 @@ public class BanIpGatewayFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest();
         String ip = authService.getRealIp(request);
         log.debug(ip);
-        if(authService.isBlacklist(ip)) {
+        if (authService.isBlacklist(ip)) {
             return unauthorized(exchange);
-        }else {
+        } else {
             return chain.filter(exchange);
         }
     }

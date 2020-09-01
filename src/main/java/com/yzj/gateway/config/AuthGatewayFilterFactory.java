@@ -1,4 +1,4 @@
-package com.yzj.gateway.gateway.config;
+package com.yzj.gateway.config;
 
 import com.uniccc.client.service.IAuthService;
 import com.uniccc.gateway.filter.AccessGatewayFilter;
@@ -13,8 +13,7 @@ public class AuthGatewayFilterFactory extends AbstractGatewayFilterFactory<Objec
     private IAuthService authService;
 
     @Override
-    public GatewayFilter apply(Object config)
-    {
+    public GatewayFilter apply(Object config) {
         return new AccessGatewayFilter(authService);
     }
 }

@@ -1,46 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <include resource="org/springframework/boot/logging/logback/base.xml" />
-    <logger name="org.springframework.web" level="INFO"/>
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>./logs/gateway.%d{yyyy-MM-dd}.log</fileNamePattern>
-            <maxHistory>90</maxHistory>
-        </rollingPolicy>
-        <encoder>
-            <charset>utf-8</charset>
-            <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%p][%c][%t][%m]-> %m%n</Pattern>
-        </encoder>
-    </appender>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <logger name="org.springframework.web" level="DEBUG"/>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <!-- encoders are assigned the type
-             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
-
-    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <queueSize>512</queueSize>
-        <appender-ref ref="FILE"/>
-    </appender>
-
-    <!-- 开发、测试环境 -->
-    <springProfile name="dev,qa">
-        <logger name="com.uniccc.gateway" level="INFO" additivity="false">
+    <!-- 开发-->
+    <springProfile name="dev">
+        <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>./logs/gateway.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>90</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <charset>utf-8</charset>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%p][%c][%t][%m]-> %m%n</Pattern>
+            </encoder>
+        </appender>
+        <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+            <queueSize>512</queueSize>
+            <appender-ref ref="FILE"/>
+        </appender>
+        <logger name="com.uniccc.gateway" level="DEBUG" additivity="false">
+            <appender-ref ref="ASYNC"/>
+            <appender-ref ref="STDOUT"/>
+        </logger>
+        <logger name="org.springframework.web" level="DEBUG" additivity="false">
+            <appender-ref ref="ASYNC"/>
+            <appender-ref ref="STDOUT"/>
+        </logger>
+        <logger name="com.uniccc.client" level="DEBUG" additivity="false">
             <appender-ref ref="ASYNC"/>
             <appender-ref ref="STDOUT"/>
         </logger>
     </springProfile>
 
-    <!-- 生产环境 -->
-    <springProfile name="prod">
-        <logger name="com.uniccc.gateway" level="INFO" additivity="false">
-            <appender-ref ref="ASYNC"/>
-            <appender-ref ref="STDOUT"/>
+    <!-- 测试环境、生产环境 -->
+    <springProfile name="qa,prod">
+        <appender name="PFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>/data/logs/xl-gateway/gateway.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>90</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <charset>utf-8</charset>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%p][%c][%t][%m]-> %m%n</Pattern>
+            </encoder>
+        </appender>
+        <appender name="PASYNC" class="ch.qos.logback.classic.AsyncAppender">
+            <queueSize>512</queueSize>
+            <appender-ref ref="PFILE"/>
+        </appender>
+        <logger name="com.uniccc.gateway" level="DEBUG" additivity="false">
+            <appender-ref ref="PASYNC"/>
+        </logger>
+        <logger name="org.springframework.web" level="DEBUG" additivity="false">
+            <appender-ref ref="PASYNC"/>
+        </logger>
+        <logger name="com.uniccc.client" level="DEBUG" additivity="false">
+            <appender-ref ref="PASYNC"/>
         </logger>
     </springProfile>
-
-
-
 </configuration>

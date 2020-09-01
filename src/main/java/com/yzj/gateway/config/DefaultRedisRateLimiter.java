@@ -1,4 +1,4 @@
-package com.yzj.gateway.gateway.config;
+package com.yzj.gateway.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter;

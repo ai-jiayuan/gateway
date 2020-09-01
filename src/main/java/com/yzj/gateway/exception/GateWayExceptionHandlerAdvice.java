@@ -1,4 +1,4 @@
-package com.yzj.gateway.gateway.exception;
+package com.yzj.gateway.exception;
 
 
 import com.uniccc.common.core.entity.vo.ResultDto;
@@ -68,7 +68,7 @@ public class GateWayExceptionHandlerAdvice {
             result = handle((ConnectTimeoutException) throwable);
         } else if (throwable instanceof BaseException) {
             result = handle((BaseException) throwable);
-        }else if (throwable instanceof RuntimeException) {
+        } else if (throwable instanceof RuntimeException) {
             result = handle((RuntimeException) throwable);
         } else if (throwable instanceof Exception) {
             result = handle((Exception) throwable);

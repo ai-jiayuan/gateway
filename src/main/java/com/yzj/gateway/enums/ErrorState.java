@@ -1,9 +1,9 @@
-package com.yzj.gateway.gateway.enums;
+package com.yzj.gateway.enums;
 
 /**
  * 错误类别
  */
-public enum ErrorState  {
+public enum ErrorState {
     /**
      * 恶意访问
      */
@@ -47,6 +47,7 @@ public enum ErrorState  {
     public Integer getValue() {
         return this.value;
     }
+
     public String getMsg() {
         return msg;
     }

@@ -1,4 +1,4 @@
-package com.yzj.gateway.gateway.offline;
+package com.yzj.gateway.offline;
 
 import com.netflix.discovery.DiscoveryManager;
 import org.slf4j.Logger;
@@ -13,7 +13,7 @@ public class OfflineController {
     private final Logger log = LoggerFactory.getLogger(OfflineController.class);
 
     @GetMapping("/offline")
-    public void offline(){
+    public void offline() {
         log.info("xl-gateway开始从Eureka中剔除！！！");
         DiscoveryManager.getInstance().shutdownComponent();
         log.info("xl-gateway从Eureka中剔除结束！！！");
