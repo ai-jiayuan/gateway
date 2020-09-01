@@ -2,6 +2,7 @@ package com.yzj.gateway.config;
 
 import com.uniccc.client.service.IAuthService;
 import com.uniccc.gateway.filter.AccessGatewayFilter;
+import com.yzj.gateway.filter.AccessGatewayFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
