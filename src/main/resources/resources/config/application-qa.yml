@@ -1,0 +1,23 @@
+spring:
+  redis:
+    timeout: 1000
+    database: 2
+    lettuce:
+      pool:
+        max-active: 50
+        max-wait: -1
+        max-idle: 20
+        min-idle: 2
+      #sentinel哨兵配置
+    sentinel:
+      master: xluniccc-master
+      nodes: 192.168.1.107:26379,192.168.1.108:26379,192.168.1.109:26379
+    password: xluniccc
+
+eureka:
+    client:
+        enabled: true
+        fetch-registry: true
+        register-with-eureka: true
+        serviceUrl:
+            defaultZone: http://qa:qa@192.168.1.124:8761/eureka/,http://qa:qa@192.168.1.125:8761/eureka/

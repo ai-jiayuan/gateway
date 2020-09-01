@@ -5,22 +5,21 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.1.RELEASE</version>
+		<version>2.1.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.yzj</groupId>
-	<artifactId>yzj-gateway</artifactId>
+	<groupId>com.uniccc</groupId>
+	<artifactId>xl-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>yzj-gateway</name>
-	<description>yzj Service Gateway</description>
+	<name>xl-gateway</name>
+	<description>XL Service Gateway</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-boot.version>2.1.1.RELEASE</spring-boot.version>
-		<spring-cloud.version>Greenwich.M3</spring-cloud.version>
+		<spring-cloud.version>Greenwich.SR3</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -28,23 +27,35 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>com.uniccc</groupId>
+            <artifactId>xl-client</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-			<version>${spring-boot.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-pool2</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
@@ -60,10 +71,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-security</artifactId>-->
-		<!--</dependency>-->
 
 
 	</dependencies>
@@ -81,14 +88,14 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>yzj-gateway</finalName>
+		<finalName>xl-gateway</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
                 <!-- 主启动类 -->
-                <mainClass>com.yzj.gateway.GatewayApplication</mainClass>
+                <mainClass>com.uniccc.gateway.GatewayApplication</mainClass>
                 </configuration>
 				<executions>
 					<execution>
@@ -105,20 +112,30 @@
 		</plugins>
 	</build>
 	<repositories>
+
+		<!-- =========================添加私服maven仓库========================================= -->
 		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
+			<id>public</id>
+			<url>https://nexus.uniccc.com/repository/maven-public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
+
+		<!-- =======================阿里云========================= -->
 		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
+			<id>maven-ali</id>
+			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
 			<snapshots>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>fail</checksumPolicy>
 			</snapshots>
 		</repository>
 	</repositories>
